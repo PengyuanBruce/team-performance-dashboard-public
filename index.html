@@ -231,6 +231,25 @@
       <div class="met"><span class="ml">客单价 <span class="calc">(计算值)</span></span><span class="mv">无成交，不适用</span></div>
     </div>
   </div>
+  <style>.bar{display:inline-block;width:150px;height:10px;background:#e9eef5;border-radius:6px;vertical-align:middle;overflow:hidden}.bar span{display:block;height:10px;background:linear-gradient(90deg,#8fb6e8,#3f74c4)}.barn{margin-left:8px;color:#4a5a70;font-size:12px;vertical-align:middle}.fh{font-weight:400;color:#8a97a8;font-size:11px}.tot td{background:#f5f8fc;font-weight:700}.rfqnote{background:#fff8e6;border-left:3px solid #e8b23f;padding:10px 12px;border-radius:6px;font-size:13px;color:#5d4a1f;margin-top:10px;line-height:1.7}</style>
+  <h2 class="sec">个人平台操作<span class="note">数据参谋按员工返回的操作字段 · 字段名随指标标注以便核对</span></h2>
+  <table>
+    <tr><th>排名</th><th>业务员</th><th>新增产品<br><span class="fh">newProductCount</span></th><th>优化产品<br><span class="fh">alterProductCount</span></th><th>在架商品<br><span class="fh">totalProductCount</span></th><th>查看 RFQ<br><span class="fh">reviewedRfq</span></th><th>产品操作量（新增 + 优化）</th></tr>
+    <tr><td>1</td><td><b>norah lan</b></td><td>1</td><td>6</td><td>101</td><td>0</td><td><div class="bar"><span style="width:8%"></span></div><span class="barn">7 次</span></td></tr>
+    <tr><td>2</td><td><b>Liang mako</b></td><td>17</td><td>68</td><td>166</td><td>0</td><td><div class="bar"><span style="width:100%"></span></div><span class="barn">85 次</span></td></tr>
+    <tr><td>3</td><td><b>Aron zhang</b></td><td>2</td><td>5</td><td>178</td><td>0</td><td><div class="bar"><span style="width:8%"></span></div><span class="barn">7 次</span></td></tr>
+    <tr><td>4</td><td><b>Aurora Liao</b></td><td>11</td><td>35</td><td>133</td><td>0</td><td><div class="bar"><span style="width:54%"></span></div><span class="barn">46 次</span></td></tr>
+    <tr><td>5</td><td><b>xiao Jane</b></td><td>1</td><td>9</td><td>140</td><td>0</td><td><div class="bar"><span style="width:12%"></span></div><span class="barn">10 次</span></td></tr>
+    <tr><td>6</td><td><b>he fang</b></td><td>0</td><td>2</td><td>105</td><td>0</td><td><div class="bar"><span style="width:2%"></span></div><span class="barn">2 次</span></td></tr>
+    <tr><td>7</td><td><b>Jayda xiao</b></td><td>0</td><td>1</td><td>78</td><td>0</td><td><div class="bar"><span style="width:1%"></span></div><span class="barn">1 次</span></td></tr>
+    <tr><td>8</td><td><b>forrest zhou</b></td><td>0</td><td>22</td><td>103</td><td>18</td><td><div class="bar"><span style="width:26%"></span></div><span class="barn">22 次</span></td></tr>
+    <tr><td>9</td><td><b>Jack luo</b></td><td>0</td><td>0</td><td>21</td><td>0</td><td><div class="bar"><span style="width:0%"></span></div><span class="barn">0 次</span></td></tr>
+    <tr><td>10</td><td><b>Alain he</b></td><td>0</td><td>0</td><td>6</td><td>0</td><td><div class="bar"><span style="width:0%"></span></div><span class="barn">0 次</span></td></tr>
+    <tr><td>11</td><td><b>pig gg</b></td><td>0</td><td>0</td><td>0</td><td>0</td><td><div class="bar"><span style="width:0%"></span></div><span class="barn">0 次</span></td></tr>
+    <tr class="tot"><td>—</td><td>团队合计</td><td>32</td><td>148</td><td>1031</td><td>18</td><td>—</td></tr>
+  </table>
+  <div class="insight">📌 <b>操作侧洞察：</b>9 月团队共新增产品 32 款、优化产品 148 款；产品操作量前三为 Liang mako、Aurora Liao、forrest zhou（85 / 46 / 22 次）。优化动作（148 次）明显多于新增（32 次），说明本月运营重心在存量商品迭代，而非铺新链接。查看 RFQ 方面，仅 forrest zhou 有记录（18 条），其余业务员均为 0 条。</div>
+  <div class="rfqnote">⚠️ <b>关于「报了多少 RFQ」：</b>数据参谋的员工接口<b>不返回报价数</b>字段。报价记录需从 RFQ 报价历史接口取，该接口按<b>报价账号 loginId</b> 归属：2026-09 共 <b>17 条</b>报价，全部来自同一个账号 <b>cn1575550963gqal</b>（其中 11 条待买家查看、4 条买家已反馈、2 条买家已查看）。平台未提供 loginId 与业务员姓名的映射关系，因此该 17 条暂<b>未并入个人卡片</b>，需你确认 cn1575550963gqal 对应哪位业务员后方可归属。</div>
   <h2 class="sec">团队 vs 同行 & 询盘国家分布<span class="note">数据来自数据参谋 · 同行基准（30天）</span></h2>
   <div class="grid2">
     <div class="panel"><h3>团队 vs 同行均值 vs 同行优秀（比率类指标）</h3><div class="chart-sm"><canvas id="rivalChart"></canvas></div>
